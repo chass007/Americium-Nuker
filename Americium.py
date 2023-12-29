@@ -275,7 +275,7 @@ class Americium:
     
     def menu(self):
         os.system(f"cls & title Americium Nuker ^| Authenticated as: {__client__.user.name}#{__client__.user.discriminator}")
-        print(x444_art + options + "\n")
+        print(Americium_art + options + "\n")
         ans = input("{}({}Americium{}) Option{}:{} ".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", "\x1b[38;5;21m", "\x1b[0m")) 
         
         if ans in ["1", "01"]:
@@ -376,7 +376,7 @@ class Americium:
                     t.join()
                 
             time.sleep(3)
-            print("{}({}x444{}) Deleted {}/{} roles".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.roles), len(roles)))
+            print("{}({}Americium{}) Deleted {}/{} roles".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m", len(self.roles), len(roles)))
             time.sleep(1.5)
             self.menu()
             
@@ -413,22 +413,22 @@ class Americium:
             
         elif ans == "10":
             try:
-                response = self.session.get("https://github.com/notspeezy/x444-Nuker/releases/latest")
+                response = self.session.get("https://github.com/chass007/Americium-Nuker/releases/latest")
                 check_version = response.headers.get('location').split('/')[7].split('v')[1]
                 if VERSION != check_version:
-                    print("{}({}x444{}) You're using an outdated version!".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
-                    webbrowser.open(f"https://github.com/notspeezy/x444-Nuker/releases/tag/{check_version}")
+                    print("{}({}Americium{}) You're using an outdated version!".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
+                    webbrowser.open(f"https://github.com/chass007/Americium-Nuker/releases/tag/{check_version}")
                 else:
-                    print("{}({}x444{}) You're using the current version!".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
+                    print("{}({}Americium{}) You're using the current version!".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
             except:
-                print("{}({}x444{}) Couldn't reach the releases!".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
+                print("{}({}Americium{}) Couldn't reach the releases!".format("\x1b[0m", "\x1b[38;5;21m", "\x1b[0m"))
             
             time.sleep(1.5)
             self.menu()
     
         
         elif ans == "11":
-            print("- Americium is a open sourced nuker which has been developed with heart by speezy. My goal was to make a great 2023's working nuker and to compete with actuals viral discord nukers.\n- You can follow me here\n- Github: https://github.com/notspeezy/\n- Cord: sp#5084\n- Insta: https://www.instagram.com/hzmicid/\n- Tiktok: speezy\n- Telegram: @notspeezy\n- YouTube: https://www.youtube.com/c/speezyw\n- Press any key to return.")
+            print("- Americium is a open sourced nuker which has been developed with heart by Chass. My goal was to make a great 2023's working nuker and to compete with actuals viral discord nukers.\n- You can follow me here\n- Github: https://github.com/notspeezy/\n- Cord: sp#5084\n- Insta: https://www.instagram.com/hzmicid/\n- Tiktok: speezy\n- Telegram: @notspeezy\n- YouTube: https://www.youtube.com/c/speezyw\n- Press any key to return.")
             input("")
             self.menu()
         
